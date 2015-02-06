@@ -16,6 +16,7 @@ png("plot2.png", width=480, height= 480)
 
 #using plot with lines (type=1), x axis the date time no label, y axis the active power,  default line width 
 #x lables with greek language Sys.getlocale("LC_TIME") > [1] "Greek_Greece.1253"
+Sys.setlocale("LC_ALL","english")
 
 plot(datasub$DateTime, datasub$Global_active_power, type= "l", lwd=1, ylab= "Global Active Power (kilowatts)", xlab="")
 
